@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.garcia</groupId>
-	<artifactId>pedido-api</artifactId>
+	<artifactId>apihorariomed</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>pedido-api</name>
+	<name>apihorariomed</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>
