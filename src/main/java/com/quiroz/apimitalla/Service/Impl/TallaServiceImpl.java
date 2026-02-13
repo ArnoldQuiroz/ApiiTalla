@@ -1,32 +1,34 @@
-package com.garcia.apihorariomed.Service.Impl;
+package com.quiroz.apimitalla.Service.Impl;
 
 import java.util.List;
 import java.util.Optional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import com.garcia.apihorariomed.Entity.Horario;
-import com.garcia.apihorariomed.Repository.HorarioRepository;
-import com.garcia.apihorariomed.Service.HorarioService;
+
+import com.quiroz.apimitalla.Entity.Talla;
+import com.quiroz.apimitalla.Repository.TallaRepository;
+import com.quiroz.apimitalla.Service.TallaService;
 
 @Service
-public class HorarioServiceImpl implements HorarioService {
+public class TallaServiceImpl implements TallaService {
 
     @Autowired
-    private HorarioRepository repository;
+    private TallaRepository repository;
 
     @Override
-    public List<Horario> findAll() {
+    public List<Talla> findAll() {
         return repository.findAll();
     }
 
     @Override
-    public Optional<Horario> findById(Long id) {
+    public Optional<Talla> findById(Long id) {
         return repository.findById(id);
     }
 
     @Override
-    public Horario save(Horario horario) {
-        return repository.save(horario);
+    public Talla save(Talla talla) {
+        return repository.save(talla);
     }
 
     @Override

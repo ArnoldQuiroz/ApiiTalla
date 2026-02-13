@@ -1,4 +1,4 @@
-package com.garcia.apihorariomed.Entity;
+package com.quiroz.apimitalla.Entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -7,12 +7,12 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Entity
-@Table(name = "horario")
+@Table(name = "tallas")
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class Horario {
+public class Talla {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -20,11 +20,11 @@ public class Horario {
 
     private String nombre;
 
-    private String dosis;
+    private String relacion;
 
-    private String hora;
+    private String prenda;
 
-    private String frecuencia;
+    private String talla;
 
     private String notas;
 
